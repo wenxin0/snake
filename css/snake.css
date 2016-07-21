@@ -1,0 +1,164 @@
+* {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+
+body {
+  background:#8DEEF5;
+  background-position: top center;
+  background-image:url(../img/66.jpg);
+  background-repeat:no-repeat;
+}
+
+.box {
+  width: 600px;
+  height: 600px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  margin: auto;
+  background-size: cover;
+  background: #6CDBEC;
+  z-index: 888;
+}
+
+.box .block {
+  width: 30px;
+  height: 30px;
+  float: left;
+}
+
+.box .she {
+  background: url(../img/she.jpg);
+  background-size: cover;
+}
+
+.box .shiwu {
+  background: url(../img/xigua.png);
+  background-size: cover;
+}
+.kaishi{
+  width: 120px;
+  height: 40px;
+  border:3px solid #fff;
+  border-radius: 20px;
+  border-top-left-radius: 30px;
+  border-bottom-right-radius: 30px;
+  background:#6CDBEC;
+  position: fixed;
+  top:330px;
+  left: 50px;
+  font-size: 22px;
+  line-height: 40px;
+  color: #fff;
+  text-align: center;
+  cursor: pointer;
+  font-weight: bold;
+  z-index: 888;
+}
+.kaishi:hover,.zanting:hover,.restart:hover{
+  background:#28FE52;
+}
+.zanting{
+  width: 120px;
+  height: 40px;
+  border:3px solid #fff;
+  border-radius: 20px;
+  border-top-left-radius: 30px;
+  border-bottom-right-radius: 30px;
+  background:#6CDBEC;
+  position: fixed;
+  top: 400px;
+  left: 50px;
+  font-size: 22px;
+  line-height: 40px;
+  color: #fff;
+  text-align: center;
+  cursor: pointer;
+  font-weight: bold;
+  z-index: 888;
+}
+.restart{
+    width: 120px;
+    height: 40px;
+    border:3px solid #fff;
+    border-radius: 20px;
+    border-top-left-radius: 30px;
+    border-bottom-right-radius: 30px;
+    background:#6CDBEC;
+    position: fixed;
+    top: 470px;
+    left: 50px;
+    font-size: 22px;
+    line-height: 40px;
+    color: #fff;
+    text-align: center;
+    cursor: pointer;
+    font-weight: bold;
+    z-index: 888;
+}
+.tangbox{
+  position: absolute;
+  left: 0;
+  top: 0;
+  right: 0;
+  height: 600px;
+  z-index: 666;
+}
+.tangbox .tang1{
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-image: url(../img/tang11.png);
+  z-index: 777;
+  width: 100%;
+  height: 100%;
+  animation:move 600s linear infinite;
+}
+.tangbox .tang2{
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-image: url(../img/tang22.png);
+  z-index: 777;
+  width: 100%;
+  height: 100%;
+  animation:movemove 500s linear infinite;
+}
+@keyframes move {
+  0% {
+    background-position: 2000px 0; }
+  50% {
+    background-position: 0 0; }
+  100% {
+    background-position: -2000px 0; } }
+@keyframes movemove {
+  0% {
+    background-position: -2000px 0; }
+  50% {
+    background-position: 0 0; }
+  100% {
+    background-position: 2000px 0; } }
+
+.gameover{
+  width: 200px;
+  height: 100px;
+  background:#0F244F;
+  position: absolute;
+  top: 50%;
+  margin-top: -50px;
+  left: 50%;
+  margin-left: -100px;
+  z-index: 999;
+  border-radius: 40px;
+  line-height: 100px;
+  text-align: center;
+  color: #fff;
+  font-weight: bold;
+  font-size: 22px;
+  display: none;
+  border:3px solid #fff;
+}
